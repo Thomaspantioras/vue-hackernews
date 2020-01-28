@@ -39,7 +39,10 @@
     ],
     "rules": {
       "prefer-promise-reject-errors": 0,
-      "no-new": 0
+      "no-new": 0,
+      "quotes": "off",
+      "semi": "off",
+      "space-before-function-paren": "off"
     },
     "parserOptions": {
       "parser": "babel-eslint"

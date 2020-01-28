@@ -1,28 +1,27 @@
 <template>
   <div class="item-list-view">
     <div class="item-list">
-      <item
-        v-for="item in displayItems"
-        :key="item.id"
-        :item="item"
-      />
+      <item v-for="item in displayItems" :key="item.id" :item="item" />
     </div>
   </div>
 </template>
 
 <script>
-import Item from '../components/Item.vue'
+import Item from "../components/Item.vue";
 
 export default {
   components: {
     Item
   },
-  data () {
+  data() {
     return {
       displayItems: window.items
-    }
+    };
   }
-}
+  // beforeMount() {
+  //   this.$bar.start();
+  // }
+};
 </script>
 
 <style>
